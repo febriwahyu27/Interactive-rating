@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Outfit:wght@300;400;500&family=Overpass:wght@300;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <!-- Rating state start -->
+      <div class="box">
+        <picture>
+          <img src="images/icon-star.svg" alt="">
+        </picture>
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p> 
+
+        <div class="rating">
+          <input type="radio" name="rating" value="1" id="rate-1">
+          <label for="rate-1" class="label__rating">1</label>
+          <input type="radio" name="rating" value="2" id="rate-2">
+          <label for="rate-2" class="label__rating">2</label>
+          <input type="radio" name="rating" value="3" id="rate-3">
+          <label for="rate-3" class="label__rating">3</label>
+          <input type="radio" name="rating" value="4" id="rate-4">
+          <label for="rate-4" class="label__rating">4</label>
+          <input type="radio" name="rating" value="5" id="rate-5">
+          <label for="rate-5" class="label__rating">5</label>
+        </div>  
+        <button id="submit" type="button" onclick="submit()">Submit</button>
+      </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+      <div class="box-thanks">
+        <img src="images/illustration-thank-you.svg" width="150px" alt="">
+
+        <div class="rating">
+          <p>You selected <span id="nilai"></span> out of 5</p> 
+        </div>
+
+        <h2>Thank you!</h2>
+
+        <p class="caption">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!</p> 
+      </div>
+
+    <!-- Thank you state end -->
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/febriwahyu27">Febri Tri Wahyu</a>.
+    </div>
+  </footer>
+  
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
